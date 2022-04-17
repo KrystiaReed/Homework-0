@@ -1,5 +1,5 @@
 ---
-title: "Gun Murders"
+title: "Report on Gun Murders"
 author: "Krystia Reed"
 date: '2022-04-17'
 output: html_document
@@ -9,14 +9,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is a report on 2010 gun murder rates obtained from FBI reports. The original data was obtained from Wikipedia.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+We are going to use the following library:
 
-```{r cars}
-summary(cars)
+```{library}
+library(tidyverse)
+```
+
+and load the data we already wrangled:
+
+```{wrangled}
+load("rdas/murders.rda")
 ```
 
 ## Including Plots
